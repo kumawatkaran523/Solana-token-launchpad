@@ -12,6 +12,14 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        'border': 'border 4s linear infinite',
+      },
+      keyframes: {
+        'border': {
+          to: { '--border-angle': '360deg' },
+        }
+      }
     },
   },
   plugins: [],

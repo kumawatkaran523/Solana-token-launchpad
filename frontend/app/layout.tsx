@@ -1,15 +1,12 @@
 "use client";
-import type { Metadata } from "next";
 import { Geist, Geist_Mono, Chakra_Petch } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { WalletConnectButton, WalletDisconnectButton, WalletModalProvider, WalletMultiButton } from "@solana/wallet-adapter-react-ui";
-import { ConnectionProvider, useWallet, WalletProvider } from "@solana/wallet-adapter-react";
+import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
+import { ConnectionProvider, WalletProvider } from "@solana/wallet-adapter-react";
 
 import '@solana/wallet-adapter-react-ui/styles.css';
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,16 +23,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// const metadata: Metadata = {
-//   title: "SolVortex",
-//   description: "Solana Token Launchpad",
-//   icons: {
-//     icon: [
-//       { url: "/icon.ico" },
-//     ],
-//   },
-//   keywords: ["Solana", "Token", "Launchpad", "Cryptocurrency"],
-// };
 
 export default function RootLayout({
   children,

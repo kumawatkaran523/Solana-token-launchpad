@@ -35,6 +35,7 @@ function Airdrop() {
             toast.success(`${amount} SOL Airdropped Successfully!`);
             setLoader(false);
         } catch (error) {
+            console.log(error);
             setLoader(false);
             toast.error("You've either reached your airdrop limit today or the airdrop faucet has run dry.");
         }

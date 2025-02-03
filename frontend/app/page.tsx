@@ -24,21 +24,21 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-          <div className="bg-black p-8 hover:shadow-xl transition-all duration-100 transform hover:scale-105 [background:linear-gradient(45deg,#000000,theme(colors.slate.900)_50%,#000000)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] rounded-2xl border border-transparent animate-border">
+          <div className="bg-black p-8 hover:shadow-xl transition-all duration-2000 transform hover:scale-105 [background:linear-gradient(45deg,#000000,theme(colors.slate.900)_50%,#000000)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] rounded-2xl border border-transparent animate-border">
             <h2 className="text-2xl font-bold mb-4 text-white">Create and Send Token</h2>
             <p className="text-gray-300">
             Easily create and send custom tokens on the Solana blockchain with just a few clicks.
             </p>
           </div>
 
-          <div className="bg-black p-8 hover:shadow-xl transition-all duration-200 transform hover:scale-105 [background:linear-gradient(45deg,#000000,theme(colors.slate.900)_50%,#000000)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] rounded-2xl border border-transparent animate-border">
+          <div className="bg-black p-8 hover:shadow-xl transition-all duration-2000 transform hover:scale-105 [background:linear-gradient(45deg,#000000,theme(colors.slate.900)_50%,#000000)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] rounded-2xl border border-transparent animate-border">
             <h2 className="text-2xl font-bold mb-4 text-white">Airdrop Solana</h2>
             <p className="text-gray-300">
               Distribute SOL tokens to multiple addresses effortlessly using our airdrop feature.
             </p>
           </div>
 
-          <div className="bg-black p-8 hover:shadow-xl transition-all duration-200 transform hover:scale-105 [background:linear-gradient(45deg,#000000,theme(colors.slate.900)_50%,#000000)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] rounded-2xl border border-transparent animate-border">
+          <div className="bg-black p-8 hover:shadow-xl transition-all duration-2000 transform hover:scale-105 [background:linear-gradient(45deg,#000000,theme(colors.slate.900)_50%,#000000)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] rounded-2xl border border-transparent animate-border">
             <h2 className="text-2xl font-bold mb-4 text-white">Send Solana</h2>
             <p className="text-gray-300">
             Quickly send SOL tokens to any wallet address on the Solana network.

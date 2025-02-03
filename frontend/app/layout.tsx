@@ -5,9 +5,11 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { WalletConnectButton, WalletDisconnectButton, WalletModalProvider, WalletMultiButton } from "@solana/wallet-adapter-react-ui";
-import { ConnectionProvider, WalletProvider } from "@solana/wallet-adapter-react";
+import { ConnectionProvider, useWallet, WalletProvider } from "@solana/wallet-adapter-react";
 
 import '@solana/wallet-adapter-react-ui/styles.css';
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,13 +45,13 @@ const geistMono = Geist_Mono({
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  
   return (
     <html lang="en" suppressHydrationWarning>
       <body
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} ${chakra.className} font-chakra  antialiased min-h-screen flex flex-col bg-[#030814]`}
       >
-        
         <ConnectionProvider endpoint="https://api.devnet.solana.com" >
           <WalletProvider wallets={[]} autoConnect>
             <WalletModalProvider>

@@ -51,7 +51,10 @@ export default function CreateToken() {
     } 
   };
 
-  const createTokenWithMetadata = async (dataObj: any, metadataURL: string) => {
+  type data={
+    name:string, symbol:string, decimal:string, supply:string, image:string 
+  }
+  const createTokenWithMetadata = async (dataObj: data, metadataURL: string) => {
     try {
       if (!wallet.publicKey) throw new Error('Wallet not connected');
 

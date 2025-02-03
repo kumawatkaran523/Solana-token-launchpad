@@ -35,11 +35,6 @@ const geistMono = Geist_Mono({
 //     ],
 //   },
 //   keywords: ["Solana", "Token", "Launchpad", "Cryptocurrency"],
-//   openGraph: {
-//     title: "SolVortex",
-//     description: "Solana Token Launchpad",
-//     type: "website",
-//   },
 // };
 
 export default function RootLayout({

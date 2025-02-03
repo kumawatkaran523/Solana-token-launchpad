@@ -1,15 +1,14 @@
-import Head from "next/head";
 import Image from "next/image";
 import solana from '/public/solana.png';
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>SolVortex - Launch Your Solana Token</title>
-        <link rel="icon" href='/public/solana.png'/>
+      <head>
+        <title>SolVortex</title>
+        <link rel="icon" type="image/x-icon" href="/solana.png"/>
         <meta name="description" content="SolVortex is the ultimate platform to launch and manage your Solana tokens with ease." />
-      </Head>
+      </head>
       <main className="container mx-auto px-4 my-28">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 mb-20">
           <div className="order-2 md:order-1">

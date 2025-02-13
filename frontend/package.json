@@ -9,6 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@metaplex-foundation/digital-asset-standard-api": "^1.0.5",
+    "@metaplex-foundation/mpl-token-metadata": "^3.4.0",
+    "@metaplex-foundation/umi": "^1.0.0",
+    "@metaplex-foundation/umi-bundle-defaults": "^1.0.0",
+    "@mui/material": "^6.4.4",
+    "@radix-ui/react-dialog": "^1.1.6",
     "@radix-ui/react-select": "^2.1.5",
     "@radix-ui/react-slot": "^1.1.1",
     "@solana/spl-token": "^0.4.12",
@@ -24,8 +32,10 @@
     "lucide-react": "^0.474.0",
     "next": "15.1.6",
     "react": "^19.0.0",
+    "react-confetti": "^6.2.2",
     "react-dom": "^19.0.0",
     "react-hot-toast": "^2.5.1",
+    "react-use": "^17.6.0",
     "tailwind-merge": "^3.0.1",
     "tailwindcss-animate": "^1.0.7"
   },

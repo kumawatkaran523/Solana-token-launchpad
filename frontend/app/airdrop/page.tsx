@@ -13,6 +13,7 @@ import { Connection, LAMPORTS_PER_SOL } from '@solana/web3.js';
 import toast, { Toaster } from 'react-hot-toast';
 import { Loader2 } from 'lucide-react';
 
+
 function Airdrop() {
     const wallet = useWallet();
     const [amount, setAmount] = useState<number | undefined>();
@@ -43,6 +44,7 @@ function Airdrop() {
 
     return (
         <>
+
             <div className='flex items-center justify-evenly my-14'>
                 <div className='text-white my-24 w-1/2 border border-gray-700 rounded-lg p-5'>
                     <p className='text-2xl font-bold'>Request Airdrop</p>

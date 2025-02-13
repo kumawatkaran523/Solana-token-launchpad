@@ -26,6 +26,7 @@ function Navbar() {
                     {
                         wallet.publicKey ? (
                             <div className="flex gap-10 items-center">
+                                <p className="text-xl font-bold hover:text-yellow-100 cursor-pointer" onClick={() => router.push('/mytoken')}>My Token</p>
                                 <p className="text-xl font-bold hover:text-yellow-100 cursor-pointer" onClick={() => router.push('/createtoken')}>Create Token</p>
                                 <p className="text-xl font-bold hover:text-yellow-100 cursor-pointer" onClick={() => router.push('/airdrop')}>Airdrop</p>
                                 <p className="text-xl font-bold hover:text-yellow-100 cursor-pointer" onClick={() => router.push('/sendsol')}>Send SOL</p>

@@ -20,7 +20,6 @@ import axios from 'axios';
 import { Loader2 } from 'lucide-react';
 import { FormEvent, useState } from 'react';
 import Confetti from 'react-confetti'
-import { useWindowSize } from 'react-use'
 export default function CreateToken() {
   const [loading, setLoading] = useState(false);
   const wallet = useWallet();

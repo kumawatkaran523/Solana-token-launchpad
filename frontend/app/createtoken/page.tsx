@@ -47,11 +47,11 @@ export default function CreateToken() {
           'Content-Type': 'multipart/form-data',
         },
       });
-
+      console.log('IPFS response:', res.data.IpfsHash);
       return `https://gateway.pinata.cloud/ipfs/${res.data.IpfsHash}`;
     } catch (error) {
       console.error('Error uploading to IPFS:', error);
-      throw error; // Rethrow to handle in the main function
+      throw error;
     }
   };
   type data = {
@@ -60,8 +60,6 @@ export default function CreateToken() {
   const createTokenWithMetadata = async (dataObj: data, metadataURL: string) => {
     try {
       if (!wallet.publicKey) throw new Error('Wallet not connected');
-
-      // Initial setup
       setStep(1);
       const keypair = Keypair.generate();
       const metadata = {
@@ -150,23 +148,23 @@ export default function CreateToken() {
           )
         ),
       ]);
+      if (imageURL && jsonURI) {
+        const tokenAddress = await createTokenWithMetadata(
+          { name, symbol, decimal, supply, image: imageURL },
+          jsonURI
+        );
+        console.log('Token created successfully:', tokenAddress);
+      } else {
+        console.error("IPFS upload failed");
+      }
 
-      const tokenAddress = await createTokenWithMetadata(
-        { name, symbol, decimal, supply, image: imageURL },
-        jsonURI
-      );
-
-      console.log('Token created successfully:', tokenAddress);
     } catch (error) {
       console.error('Error in token creation process:', error);
       setStep(-1);
-      setTimeout(() => {
-        setCongrats(true);
-      }, 3000);
-      setCongrats(false);
     } finally {
       form.reset();
       setLoading(false);
+      setCongrats(true);
     }
   };
 
